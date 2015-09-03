@@ -51,6 +51,9 @@ struct ship {
 	//skip the rest for now...
 };
 
-ship getPlayerShip(void);
+extern ship* ships;
+extern ship* playerShip;
 
-ship getEnemyShip(void);
+ship* getPlayerShip(void);
+
+ship* getEnemyShip(void);
