@@ -1,6 +1,5 @@
 #include "DirtyHooker.h"
 #include <cstdio>
-#include <Windows.h>
 
 // changes instruction to be MOV reg, *value
 void MovAddrReg6Byte(DWORD instruction, char* const reg, void* pValue, HANDLE process){
