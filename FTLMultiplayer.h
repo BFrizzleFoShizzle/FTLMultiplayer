@@ -1,3 +1,6 @@
-void readBitmapFont(FILE* file);
-void drawChar(float x, float y, char text);
-void drawString(float x, float y, char* text);
+#pragma once
+#define NULL 0
+#include "FTLShip.h"
+
+ship* ships = NULL;
+ship* playerShip = NULL;

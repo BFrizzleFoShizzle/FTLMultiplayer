@@ -75,13 +75,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DirtyHooker.cpp" />
+    <ClCompile Include="FTLDraw.cpp" />
     <ClCompile Include="FTLMultiplayer.cpp" />
+    <ClCompile Include="FTLShip.cpp" />
+    <ClCompile Include="FTLShipSelector.cpp" />
+    <ClCompile Include="ShipDescriptor.cpp" />
     <ClCompile Include="TextHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DirtyHooker.h" />
+    <ClInclude Include="FTLAPI.h" />
+    <ClInclude Include="FTLDraw.h" />
     <ClInclude Include="FTLMultiplayer.h" />
     <ClInclude Include="FTLShip.h" />
+    <ClInclude Include="FTLShipSelector.h" />
     <ClInclude Include="FTLWeapon.h" />
+    <ClInclude Include="ShipDescriptor.h" />
     <ClInclude Include="TextHelper.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

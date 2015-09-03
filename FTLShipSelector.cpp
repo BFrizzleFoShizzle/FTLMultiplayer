@@ -1,4 +1,5 @@
 ﻿#include "FTLShipSelector.h"
+#include "FTLAPI.h"
 #include <cstdlib>
 #include <Windows.h>
 #include <gl\GL.h>
@@ -11,7 +12,6 @@
 EXTERN_C IMAGE_DOS_HEADER __ImageBase;
 
 
-HANDLE FTLProcess;
 DWORD mouseClickPointer = 0x00400000+0x22BF3C;
 
 char ourDirectory[MAX_PATH] = {0};
@@ -246,7 +246,7 @@ void drawStuff(void) {
 	}
 };
 
-DWORD WINAPI FTLM_Main (LPVOID lpParam)
+void FTLSSMain (void)
 {
 	FTLProcess = GetCurrentProcess();
 	// Hook openGL finish
@@ -317,15 +317,4 @@ DWORD WINAPI FTLM_Main (LPVOID lpParam)
 		Sleep(1);
 	}
 	*/
-	return 0;
-};
-
-BOOL WINAPI DllMain (HINSTANCE hModule, DWORD dwAttached, LPVOID lpvReserved)
-{
-	// DLL entry point
-	// make us a thread!
-    if (dwAttached == DLL_PROCESS_ATTACH) {
-        CreateThread(NULL,0,&FTLM_Main,NULL,0,NULL);
-    }
-    return 1;
 };

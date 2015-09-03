@@ -21,6 +21,21 @@
     <ClCompile Include="TextHelper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FTLShip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DirtyHooker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ShipDescriptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FTLShipSelector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FTLDraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FTLMultiplayer.h">
@@ -33,6 +48,21 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="FTLShip.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DirtyHooker.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ShipDescriptor.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FTLShipSelector.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FTLAPI.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FTLDraw.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
